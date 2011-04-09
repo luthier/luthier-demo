@@ -2,7 +2,7 @@
 RewriteEngine On
 
 # Installation directory
-RewriteBase /kalf
+RewriteBase /luthier
 
 # Protect hidden files from being viewed
 <Files .*>

@@ -1,0 +1,22 @@
+<phpunit bootstrap="modules/unittest/bootstrap.php" colors="true">
+
+	<testsuites>
+		<testsuite name="Luthier Test Suite">
+			<directory>modules/luthier-core/tests</directory>
+		</testsuite>
+	</testsuites>
+
+	<groups>
+		<include>
+			<group>luthier</group>
+		</include>
+	</groups>
+
+	<!-- Uncomment to run code coverage (whitelist in config/unittest.php)
+	<logging>
+		<log type="coverage-html" target="coverage" charset="UTF-8"
+			yui="true" highlight="true" lowUpperBound="35" highLowerBound="70" />
+	</logging>
+	-->
+
+</phpunit>

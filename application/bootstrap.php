@@ -47,6 +47,7 @@ spl_autoload_register(array('Kohana', 'auto_load'));
  * @see  http://php.net/manual/var.configuration.php#unserialize-callback-func
  */
 ini_set('unserialize_callback_func', 'spl_autoload_call');
+error_reporting(E_ALL);
 
 // -- Configuration and initialization -----------------------------------------
 
@@ -80,7 +81,8 @@ if (isset($_SERVER['KOHANA_ENV']))
  * - boolean  caching     enable or disable internal caching                 FALSE
  */
 Kohana::init(array(
-	'base_url'   => '/kalf/',
+	'base_url'   => '/luthier',
+	'index_file' => FALSE,
 ));
 
 /**
@@ -97,6 +99,16 @@ Kohana::$config->attach(new Config_File);
  * Enable modules. Modules are referenced by a relative or absolute path.
  */
 Kohana::modules(array(
+	'a1'            => MODPATH.'a1',         // Authentication
+	'a2'            => MODPATH.'a2',         // Object level authorization
+	'acl'           => MODPATH.'acl',        // ACL
+	'kostache'      => MODPATH.'kostache',   // Logic-less views
+
+	'luthier-theme-davies' => MODPATH.'luthier-theme-davies', // Davies theme
+
+	'kalf-log'      => MODPATH.'kalf-log',   // Web-based log viewer
+	'luthier-core'     => MODPATH.'luthier-core',  // Luthier core
+
 	// 'auth'       => MODPATH.'auth',       // Basic authentication
 	// 'cache'      => MODPATH.'cache',      // Caching with multiple backends
 	// 'codebench'  => MODPATH.'codebench',  // Benchmarking tool
@@ -104,7 +116,7 @@ Kohana::modules(array(
 	// 'image'      => MODPATH.'image',      // Image manipulation
 	// 'orm'        => MODPATH.'orm',        // Object Relationship Mapping
 	// 'unittest'   => MODPATH.'unittest',   // Unit testing
-	// 'userguide'  => MODPATH.'userguide',  // User guide and API documentation
+	'userguide'  => MODPATH.'userguide',  // User guide and API documentation
 	));
 
 /**

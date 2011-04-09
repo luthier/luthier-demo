@@ -7,3 +7,24 @@
 [submodule "modules/userguide"]
 	path = modules/userguide
 	url = https://github.com/kohana/userguide.git
+[submodule "modules/kostache"]
+	path = modules/kostache
+	url = https://github.com/zombor/KOstache.git
+[submodule "modules/a2"]
+	path = modules/a2
+	url = git://github.com/Wouterrr/A2.git
+[submodule "modules/acl"]
+	path = modules/acl
+	url = git://github.com/Wouterrr/ACL.git
+[submodule "modules/a1"]
+	path = modules/a1
+	url = git://github.com/Wouterrr/A1.git
+[submodule "modules/luthier-core"]
+	path = modules/luthier-core
+	url = git://github.com/luthier/luthier-core
+[submodule "modules/luthier-a2"]
+	path = modules/luthier-a2
+	url = git://github.com/luthier/luthier-a2
+[submodule "modules/luthier-theme-davies"]
+	path = modules/luthier-theme-davies
+	url = git://github.com/luthier/luthier-theme-davies
