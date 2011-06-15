@@ -1,15 +1,15 @@
 [submodule "system"]
 	path = system
-	url = https://github.com/kohana/core.git
+	url = git://github.com/kohana/core.git
 [submodule "modules/unittest"]
 	path = modules/unittest
-	url = https://github.com/kohana/unittest.git
+	url = git://github.com/kohana/unittest.git
 [submodule "modules/userguide"]
 	path = modules/userguide
-	url = https://github.com/kohana/userguide.git
+	url = git://github.com/kohana/userguide.git
 [submodule "modules/kostache"]
 	path = modules/kostache
-	url = https://github.com/zombor/KOstache.git
+	url = git://github.com/zombor/KOstache.git
 [submodule "modules/a2"]
 	path = modules/a2
 	url = git://github.com/Wouterrr/A2.git
